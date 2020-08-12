@@ -10,8 +10,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/user")
 public class UserController {
+
     @Value("${server.port}")
     String port;
+
 
 
     @GetMapping("/hi")
